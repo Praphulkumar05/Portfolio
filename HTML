@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
+     <!-- Dark Mode Button -->
+    
     <div class="wrapper">
+      
       <div class="container">
         <div class="navibar">
           <div class="logo-container">
-            <img src="p 2nd.png" class="logo-image" />
-            <div class="logotext">raphul Kumar </div>
+            <!-- <img src="p 2nd.png" class="logo-image" /> -->
+            <!-- <div class="logotext">Praphul Kumar </div> -->
+            <!-- <div class="logotext"><span class="role"></span></div> -->
+
           </div>
 
           <div class="logo-items">
@@ -28,13 +33,15 @@
           </div>
         </div>
         <div class="phtoto-section">
-          <div class="faded-text">Praphul Kumar</div>
+          <!-- <div class="faded-text">Praphul Kumar</div> -->
 
           <div class="left-section">
-            <div class="heading-section-left">Hi Praphul Kumar !!</div>
+            <div class="heading-section-left">Hello Everyone !!</div>
             <div class="subheading-section heading-section-left">
-              I am <span class="role"></span>
+              I am Praphul Kumar <span class="role"></span>
+              
             </div>
+            
 
             <div class="description-section">
               Hi I am a Software developer ,Here is my Portfolio Website. Here
@@ -48,13 +55,13 @@
               <img src="MyPhoto.jpg" width="150px" alt="" />
             </div>
 
-            <div class="absolute icon icon-cube">
+            <!-- <div class="absolute icon icon-cube">
               <img src="cube.jpg" width="35px" alt="" />
-            </div>
+            </div> -->
 
-            <div class="absolute icon icon-circle">
+            <!-- <div class="absolute icon icon-circle">
               <img src="circle.jpg" width="25px" alt="" />
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="Project-section">
@@ -303,7 +310,7 @@
           <div class="container">
             <div class="footer-wrapper">
               
-              <div class="footer-fade">Praphul Kumar</div>
+              <div class="footer-fade"></div>
         
               <div class="link-wrapper">
                 <div class="p1" id="Projects">Projects</div>
@@ -357,7 +364,7 @@
           "Full Stack Developer",
           "Web Developer",
           "Software Tester",
-          "Front Developer",
+          "Frontend Developer",
           "Coder",
         ],
         loop: true,
@@ -365,6 +372,14 @@
         backSpeed: 80,
         backDelay: 1000,
       });
+     
+    
+        // Toggle dark mode class on the nav links as well
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.classList.toggle('dark-mode');
+        });
+    
     </script>
   </body>
 </html>
